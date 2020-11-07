@@ -1,9 +1,32 @@
-import "./App.css";
+import Ghost from "./components/Ghost";
+import List from "./components/List";
+import PageTitle from "./components/PageTitle";
+import ProfileCard from "./components/ProfileCard";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div>
-      <h1>Empty</h1>
+      {/* <PageTitle /> */}
+
+      <Ghost />
+
+      <TodoList />
+
+      <ProfileCard />
+
+      <List title={"English music"} items={["Beatles", "Dio", "Wu Tang"]} />
+
+      <List title={"Spanish music"} items={["Shakira", "Enriqe"]} />
+
+      <List
+        title={"Daily routine"}
+        items={["wake up", "code", "sleep"]}
+        ordered={true}
+        type="I"
+      />
+
+      <p>Design by Aziz Alsaffar</p>
     </div>
   );
 }
