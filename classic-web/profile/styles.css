@@ -1,0 +1,13 @@
+body {
+  background-color: skyblue;
+}
+
+.profile-pic {
+  width: 200px;
+}
+
+.card {
+  width: 200px;
+  padding: 30px;
+  background-color: white;
+}
